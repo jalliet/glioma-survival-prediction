@@ -1,0 +1,28 @@
+feature,importance
+age at diagnosis,0.3947293940752404
+number of days from diagnosis to 1st mri (timepoint_1),0.3647768616719565
+previous brain tumor_Yes,0.03972298129985989
+grade of primary brain tumor,0.039583081503297576
+mgmt methylation,0.02777379879387347
+chromosome 7 gain and chromosome 10 loss,0.02295513231193968
+1p/19q,0.01976846715525514
+primary diagnosis_GBM,0.019768020839586953
+idh1 mutation,0.013048190264629786
+egfr amplification,0.011619483747318915
+atrx mutation,0.009539864855714016
+h3-3a mutation,0.008270609685415417
+idh2 mutation,0.007314461378462556
+stereotactic biopsy before surgical resection,0.006430538409394756
+sex at birth_Male,0.004739322698373843
+tert promoter mutation,0.003972663269166455
+tp53 alteration,0.0032754037722166223
+braf v600e mutation,0.0027117242682979863
+pten mutation,0.0
+race_Black or African American,0.0
+cdkn2a/b deletion,0.0
+race_White,0.0
+race_Unknown,0.0
+primary diagnosis_Diffuse glioma,0.0
+primary diagnosis_Glioma w/ GBM features,0.0
+primary diagnosis_Oligodendro-glioma,0.0
+primary diagnosis_Pilocytic astrocytoma,0.0
