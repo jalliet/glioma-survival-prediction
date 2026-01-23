@@ -1,0 +1,22 @@
+feature,importance
+primary diagnosis,0.24411657
+idh1 mutation,0.20193166
+age at diagnosis,0.19169046
+tert promoter mutation,0.11115788
+grade of primary brain tumor,0.08168596
+number of days from diagnosis to 1st mri (timepoint_1),0.0622578
+sex at birth,0.043537814
+atrx mutation,0.03743443
+mgmt methylation,0.026187398
+race,0.0
+1p/19q,0.0
+stereotactic biopsy before surgical resection,0.0
+idh2 mutation,0.0
+braf v600e mutation,0.0
+chromosome 7 gain and chromosome 10 loss,0.0
+egfr amplification,0.0
+h3-3a mutation,0.0
+pten mutation,0.0
+cdkn2a/b deletion,0.0
+tp53 alteration,0.0
+previous brain tumor,0.0

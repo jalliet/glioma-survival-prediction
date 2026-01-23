@@ -1,0 +1,26 @@
+feature,importance
+molecular_risk,0.23493573
+primary diagnosis,0.15080401
+idh_wt_gbm,0.14059119
+tert promoter mutation,0.09185499
+age at diagnosis,0.08498407
+idh1 mutation,0.05237782
+number of days from diagnosis to 1st mri (timepoint_1),0.044367664
+atrx mutation,0.043456372
+sex at birth,0.038323265
+elderly_gbm,0.034820657
+h3-3a mutation,0.031298432
+1p/19q,0.02741884
+mgmt methylation,0.024766944
+idh2 mutation,0.0
+stereotactic biopsy before surgical resection,0.0
+race,0.0
+grade of primary brain tumor,0.0
+pten mutation,0.0
+egfr amplification,0.0
+chromosome 7 gain and chromosome 10 loss,0.0
+braf v600e mutation,0.0
+previous brain tumor,0.0
+tp53 alteration,0.0
+cdkn2a/b deletion,0.0
+high_grade,0.0
