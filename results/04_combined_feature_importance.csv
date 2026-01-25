@@ -1,0 +1,37 @@
+feature,importance,is_imaging
+chromosome 7 gain and chromosome 10 loss,0.10693478,False
+primary diagnosis_GBM,0.10594959,False
+idh1 mutation,0.08297504,False
+tert promoter mutation,0.06944427,False
+grade of primary brain tumor,0.06639376,False
+cdkn2a/b deletion,0.04906603,False
+age at diagnosis,0.047792684,False
+t2w_mean,0.041067753,True
+t1n_std,0.040094856,True
+tumour_volume_mm3,0.037304636,True
+sex at birth_Male,0.036074497,False
+h3-3a mutation,0.02816923,False
+t2w_std,0.027767668,True
+t2f_std,0.027231604,True
+t1c_std,0.027119538,True
+t1c_mean,0.026306078,True
+number of days from diagnosis to 1st mri (timepoint_1),0.026108114,False
+t1n_mean,0.02600994,True
+t2f_mean,0.02402842,True
+mgmt methylation,0.022479571,False
+atrx mutation,0.022463568,False
+stereotactic biopsy before surgical resection,0.02161473,False
+idh2 mutation,0.01900462,False
+1p/19q,0.018599058,False
+pten mutation,0.0,False
+egfr amplification,0.0,False
+tp53 alteration,0.0,False
+braf v600e mutation,0.0,False
+race_Black or African American,0.0,False
+race_Unknown,0.0,False
+race_White,0.0,False
+primary diagnosis_Diffuse glioma,0.0,False
+primary diagnosis_Glioma w/ GBM features,0.0,False
+primary diagnosis_Oligodendro-glioma,0.0,False
+primary diagnosis_Pilocytic astrocytoma,0.0,False
+previous brain tumor_Yes,0.0,False
