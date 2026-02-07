@@ -1,2 +1,9 @@
 .vscode/
 data/
+*.zip
+
+.DS_Store
+results/.DS_Store
+results/figures/.DS_Store
+results/figures/growth_rate/.DS_Store
+results/growth_rate/.DS_Store
