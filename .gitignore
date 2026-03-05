@@ -1,5 +1,7 @@
 .vscode/
 data/
+*.tex
+*.pdf
 *.zip
 
 .DS_Store
