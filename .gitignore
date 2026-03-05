@@ -1,10 +1,23 @@
+# Meta
 .vscode/
-data/
-*.tex
+.DS_Store
+
+# Latex Compilation Output Files
+*.aux
+*.bbl
+*.blg
+*.lof
+*.log
+*.lot
+*.out
 *.pdf
+*.sh
+*.tex
+*.toc
 *.zip
 
-.DS_Store
+# Data
+data/
 results/.DS_Store
 results/figures/.DS_Store
 results/figures/growth_rate/.DS_Store

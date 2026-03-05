@@ -205,10 +205,8 @@ def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     temp_dir = os.path.join(OUTPUT_DIR, 'temp_binary_masks')
     os.makedirs(temp_dir, exist_ok=True)
-
-    # -------------------------------------------------------------------------
+    
     # 1. Verify paths exist
-    # -------------------------------------------------------------------------
     logger.info('\n1. Verifying data paths...')
     
     if not os.path.exists(MU_GLIOMA_DIR):
@@ -223,9 +221,8 @@ def main():
     logger.info(f'  MU_GLIOMA_DIR: OK')
     logger.info(f'  CLINICAL_DATA_PATH: OK')
 
-    # -------------------------------------------------------------------------
+    
     # 2. Load clinical data for patient ID alignment
-    # -------------------------------------------------------------------------
     logger.info('\n2. Loading clinical data...')
     
     clinical_raw = pd.read_excel(CLINICAL_DATA_PATH, sheet_name='MU Glioma Post')
@@ -244,9 +241,8 @@ def main():
     clinical_patient_ids = set(clinical_raw[patient_id_col].astype(str).values)
     logger.info(f'  Clinical patients: {len(clinical_patient_ids)}')
 
-    # -------------------------------------------------------------------------
+    
     # 3. Build patient file registry
-    # -------------------------------------------------------------------------
     logger.info('\n3. Scanning imaging directories...')
     
     all_patient_dirs = sorted([
@@ -270,9 +266,7 @@ def main():
     logger.info(f'  Patients with T1ce + segmentation: {len(patient_file_registry)}')
     logger.info(f'  Patients missing required files: {len(missing_patients)}')
 
-    # -------------------------------------------------------------------------
     # 4. Align with clinical data
-    # -------------------------------------------------------------------------
     imaging_patient_ids = set(extract_patient_id(d) for d in patient_file_registry.keys())
     overlap = imaging_patient_ids & clinical_patient_ids
 
@@ -287,9 +281,7 @@ def main():
     logger.info(f'  Matched (overlap): {len(overlap)}')
     logger.info(f'  Patients to process: {len(matched_patients)}')
 
-    # -------------------------------------------------------------------------
     # 5. Configure PyRadiomics extractor
-    # -------------------------------------------------------------------------
     logger.info('\n5. Configuring PyRadiomics extractor...')
     
     extractor_settings = {
@@ -309,9 +301,7 @@ def main():
     logger.info(f'  Enabled feature classes: {list(extractor.enabledFeatures.keys())}')
     logger.info(f'  Bin width: {extractor_settings["binWidth"]}')
 
-    # -------------------------------------------------------------------------
     # 6. Full cohort extraction
-    # -------------------------------------------------------------------------
     logger.info('\n6. Starting full extraction...')
     logger.info(f'  Patients to process: {len(matched_patients)}')
     logger.info(f'  Intermediate saves every {BATCH_SIZE} patients')
@@ -348,9 +338,7 @@ def main():
 
     full_elapsed = time.time() - full_start
 
-    # -------------------------------------------------------------------------
     # 7. Save final results
-    # -------------------------------------------------------------------------
     logger.info('\n7. Saving results...')
 
     full_features_df = pd.DataFrame(all_features_list)
@@ -367,9 +355,7 @@ def main():
             f.write('\n'.join(failed_patients))
         logger.info(f'  Failed patients saved: {failed_path}')
 
-    # -------------------------------------------------------------------------
     # 8. Summary
-    # -------------------------------------------------------------------------
     logger.info('\n' + '=' * 70)
     logger.info('EXTRACTION COMPLETE')
     logger.info('=' * 70)
