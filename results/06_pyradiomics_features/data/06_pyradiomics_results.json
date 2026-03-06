@@ -1,0 +1,50 @@
+{
+  "notebook": "06_pyradiomics_feature_extraction",
+  "data": {
+    "total_patient_dirs": 203,
+    "patients_with_imaging": 202,
+    "patients_matched": 202,
+    "demo_patients": [
+      "PatientID_0003",
+      "PatientID_0116",
+      "PatientID_0275"
+    ]
+  },
+  "features": {
+    "total_extracted": 107,
+    "after_qc": 61,
+    "selected": 8
+  },
+  "model_comparison": [
+    {
+      "model": "Clinical Only",
+      "auc_mean": 0.7418010936431989,
+      "auc_std": 0.11242335608761435
+    },
+    {
+      "model": "Radiomics Only",
+      "auc_mean": 0.5984802916381864,
+      "auc_std": 0.15083355558770695
+    },
+    {
+      "model": "Clinical + Radiomics",
+      "auc_mean": 0.7254294827979039,
+      "auc_std": 0.08048773248388608
+    }
+  ],
+  "extractor_settings": {
+    "binWidth": 25,
+    "label": 1,
+    "image_types": [
+      "Original"
+    ],
+    "feature_classes": [
+      "firstorder",
+      "shape",
+      "glcm",
+      "glrlm",
+      "glszm",
+      "gldm"
+    ]
+  }
+}
