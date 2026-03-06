@@ -17,7 +17,6 @@ Final-year University Project on Glioma Survival Prediction
 │   └── 06_pyradiomics_features/  # Comprehensive radiomics figures
 ├── 06 data/                # PyRadiomics extraction output (CSF3)
 ├── 06 figures/             # PyRadiomics analysis figures
-└── Report.tex              # Project report (LaTeX)
 ```
 
 See `scripts/README.md` and `results/README.md` for details.
