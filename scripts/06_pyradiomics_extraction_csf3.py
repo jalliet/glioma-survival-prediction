@@ -1,9 +1,7 @@
-#!/usr/bin/env python3
 """
 Notebook 06: PyRadiomics Feature Extraction for CSF3 Cluster
-=============================================================
 
-Standalone script converted from 06_pyradiomics_feature_extraction.ipynb
+Standalone script converted from 06_pyradiomics_feature_extraction.ipynb 
 for execution on the University of Manchester CSF3 cluster.
 
 This script extracts comprehensive radiomic features (GLCM, GLRLM, GLSZM, 
@@ -18,7 +16,6 @@ Usage:
     3. Submit via: qsub radiomics_joshua.sh
 
 Author: Joshua Alliet
-Date: February 2026
 """
 
 import os
@@ -35,32 +32,14 @@ import SimpleITK as sitk
 
 from radiomics import featureextractor
 
-# =============================================================================
-# CONFIGURATION - UPDATE THESE PATHS FOR YOUR CSF3 SETUP
-# =============================================================================
+DATA_DIR = os.path.expanduser('~/scratch/MU_Glioma_Post') # Base dir with data
+MU_GLIOMA_DIR = os.path.join(DATA_DIR, 'MU_Glioma_Post') # Contains patient imaging folders (PatientID_XXXX)
+CLINICAL_DATA_PATH = os.path.join(DATA_DIR, 'MU_Glioma_Post_ClinicalData_July2025.xlsx') # Clinical data Excel file
+OUTPUT_DIR = os.path.join(DATA_DIR, 'pyradiomics_results') # For results
+BATCH_SIZE = 20 # Batch save frequency (save intermediate results every N patients)
+RANDOM_STATE = 42 # Random seed for reproducibility
 
-# Base directory containing MU_Glioma_Post data on CSF3
-# Using ~ expands to your home directory; scratch is a symlink there
-DATA_DIR = os.path.expanduser('~/scratch/MU_Glioma_Post')
-
-# Directory containing patient imaging folders (PatientID_XXXX)
-MU_GLIOMA_DIR = os.path.join(DATA_DIR, 'MU_Glioma_Post')
-
-# Clinical data Excel file
-CLINICAL_DATA_PATH = os.path.join(DATA_DIR, 'MU_Glioma_Post_ClinicalData_July2025.xlsx')
-
-# Output directory for results
-OUTPUT_DIR = os.path.join(DATA_DIR, 'pyradiomics_results')
-
-# Batch save frequency (save intermediate results every N patients)
-BATCH_SIZE = 20
-
-# Random seed for reproducibility
-RANDOM_STATE = 42
-
-# =============================================================================
 # LOGGING SETUP
-# =============================================================================
 
 logging.basicConfig(
     level=logging.INFO,
@@ -78,10 +57,7 @@ radiomics_logger.setLevel(logging.WARNING)
 
 warnings.filterwarnings('ignore', category=FutureWarning)
 
-# =============================================================================
 # HELPER FUNCTIONS
-# =============================================================================
-
 def find_first_timepoint_files(patient_dir_path):
     """
     For a given patient directory, find the first timepoint's T1ce volume
@@ -192,10 +168,7 @@ def extract_features_for_patient(patient_id, file_map, extractor, temp_dir):
         return None
 
 
-# =============================================================================
 # MAIN EXTRACTION PIPELINE
-# =============================================================================
-
 def main():
     logger.info('=' * 70)
     logger.info('PYRADIOMICS FEATURE EXTRACTION - CSF3 CLUSTER')
