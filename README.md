@@ -6,17 +6,14 @@ Final-year University Project on Glioma Survival Prediction
 ```
 ├── scripts/
 │   ├── notebooks/          # Jupyter notebooks (01–06), run on Google Colab
-│   ├── 06_pyradiomics_extraction_csf3.py   # PyRadiomics extraction for CSF3 cluster
-│   └── compile_project.sh  # Compiles Report.tex via external build directory
+│   ├── 06_pyradiomics_extraction_csf3.py   # PyRadiomics extraction for UoM CSF3 cluster
 ├── results/
 │   ├── 01_eda/             # EDA figures
-│   ├── 02_tabular_models/  # Binary classification figures + data
-│   ├── 03_survival/        # Survival analysis figures + data
-│   ├── 04_radiomics/       # Imaging feature analysis figures + data
-│   ├── 05_growth_rate/     # Tumour growth prediction figures + data
-│   └── 06_pyradiomics_features/  # Comprehensive radiomics figures + data
-├── 06 data/                # PyRadiomics extraction output (CSF3)
-├── 06 figures/             # PyRadiomics analysis figures
+│   ├── 02_tabular_models/  # Binary classification figures + derived data
+│   ├── 03_survival/        # Survival analysis figures + derived data
+│   ├── 04_radiomics/       # Imaging feature analysis figures + derived data
+│   ├── 05_growth_rate/     # Tumour growth prediction figures + derived data
+│   └── 06_pyradiomics_features/  # Comprehensive radiomics figures + derived data
 ```
 
 See `scripts/README.md` and `results/README.md` for details.
