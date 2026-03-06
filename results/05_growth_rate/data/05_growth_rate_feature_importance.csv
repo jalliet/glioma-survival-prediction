@@ -1,0 +1,14 @@
+,0
+t0_edema_vol,0.184518
+t0_t2f_mean,0.11192138
+t0_t2w_mean,0.08790329
+t0_t1n_std,0.08172522
+t0_t2w_std,0.07553884
+vol_t0,0.072429545
+t0_cavity_vol,0.0679235
+t0_enhancing_vol,0.06771357
+t0_t2f_std,0.053084306
+t0_necrotic_vol,0.052504342
+t0_t1c_std,0.050323952
+t0_t1n_mean,0.04900439
+t0_t1c_mean,0.045409773
