@@ -10,11 +10,11 @@ Final-year University Project on Glioma Survival Prediction
 │   └── compile_project.sh  # Compiles Report.tex via external build directory
 ├── results/
 │   ├── 01_eda/             # EDA figures
-│   ├── 02_tabular_models/  # Binary classification figures
-│   ├── 03_survival/        # Survival analysis figures
-│   ├── 04_radiomics/       # Imaging feature analysis figures
-│   ├── 05_growth_rate/     # Tumour growth prediction figures
-│   └── 06_pyradiomics_features/  # Comprehensive radiomics figures
+│   ├── 02_tabular_models/  # Binary classification figures + data
+│   ├── 03_survival/        # Survival analysis figures + data
+│   ├── 04_radiomics/       # Imaging feature analysis figures + data
+│   ├── 05_growth_rate/     # Tumour growth prediction figures + data
+│   └── 06_pyradiomics_features/  # Comprehensive radiomics figures + data
 ├── 06 data/                # PyRadiomics extraction output (CSF3)
 ├── 06 figures/             # PyRadiomics analysis figures
 ```
