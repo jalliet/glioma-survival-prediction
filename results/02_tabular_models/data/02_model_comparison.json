@@ -1,0 +1,55 @@
+{
+  "baseline": {
+    "n_features": 28,
+    "auc_mean": 0.7297789929368876,
+    "auc_std": 0.0907275307636321,
+    "accuracy_mean": 0.7290243902439023,
+    "f1_mean": 0.7287301733105835,
+    "note": "Includes leakage features - for reference only"
+  },
+  "clean": {
+    "n_features": 21,
+    "auc_mean": 0.673526999316473,
+    "auc_std": 0.11129902553126934,
+    "accuracy_mean": 0.6697560975609755,
+    "f1_mean": 0.6870044852350212,
+    "features_removed": [
+      "second progression/recurrence",
+      "type of 2nd progression",
+      "time to first progression (days)",
+      "number of days from diagnosis to date of first progression",
+      "number of days from diagnosis to first surgery or procedure",
+      "progression",
+      "type of 1st progression"
+    ]
+  },
+  "regularised": {
+    "n_features": 21,
+    "auc_mean": 0.6229471405787195,
+    "auc_std": 0.0837796667726142,
+    "accuracy_mean": 0.6210975609756098,
+    "f1_mean": 0.6331695906432749,
+    "note": "Conservative hyperparameters to reduce overfitting"
+  },
+  "logistic_regression": {
+    "n_features": 21,
+    "auc_mean": 0.6919002050580998,
+    "auc_std": 0.11921985967926135,
+    "accuracy_mean": 0.6552439024390244,
+    "f1_mean": 0.6919936373276776,
+    "note": "Simple linear baseline"
+  },
+  "feature_engineered": {
+    "n_features": 25,
+    "auc_mean": 0.6769002050580998,
+    "auc_std": 0.12350493915696348,
+    "accuracy_mean": 0.6747560975609757,
+    "f1_mean": 0.6867425463886537,
+    "engineered_features": [
+      "idh_wt_gbm",
+      "elderly_gbm",
+      "molecular_risk",
+      "high_grade"
+    ]
+  }
+}
