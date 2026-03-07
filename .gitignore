@@ -21,3 +21,4 @@ results/.DS_Store
 *.txt
 fumie/
 guidelines/
+word_count.py
