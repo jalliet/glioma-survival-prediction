@@ -20,4 +20,3 @@ Notebooks run on Google Colab with data stored on Google Drive.
 | Script | Description |
 |--------|-------------|
 | `06_pyradiomics_extraction_csf3.py` | PyRadiomics extraction adapted for the University of Manchester CSF3 cluster. Generates `06_full_radiomic_features.csv` used by notebook 06. |
-| `compile_project.sh` | Compiles `Report.tex` using the figures in the external build directory. |
