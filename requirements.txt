@@ -1,0 +1,19 @@
+# Mirror of the Google Colab and University of Manchester CSF3 environments
+# used to run scripts/notebooks/01-06 and scripts/06_pyradiomics_extraction_csf3.py.
+# Imaging data is not included in this repo, so reproduction requires obtaining
+# MU-Glioma-Post from The Cancer Imaging Archive separately.
+
+numpy
+pandas
+matplotlib
+seaborn
+scipy
+scikit-learn
+xgboost
+lifelines
+scikit-survival
+SimpleITK
+nibabel
+
+# Patched PyRadiomics fork pinned by notebook 06 and the CSF3 extraction script
+pyradiomics @ git+https://github.com/Kozmosa/pyradiomics-fix-configparser.git
