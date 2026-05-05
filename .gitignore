@@ -1,8 +1,4 @@
-# Meta
-.vscode/
-.DS_Store
-
-# Latex Compilation Output Files
+# LaTeX build artifacts
 *.aux
 *.bbl
 *.blg
@@ -10,15 +6,11 @@
 *.log
 *.lot
 *.out
-*.pdf
-*.sh
-*.tex
 *.toc
-*.zip
 
-# Results
-results/.DS_Store
-*.txt
-fumie/
-guidelines/
-word_count.py
+# macOS
+.DS_Store
+**/.DS_Store
+
+screencast/
+report/*.tex
